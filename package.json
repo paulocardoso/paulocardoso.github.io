@@ -1,0 +1,23 @@
+{
+  "name": "paulocardoso",
+  "version": "1.0.0",
+  "description": "Paulo Cardoso`s personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulocardoso/paulocardoso.github.io.git"
+  },
+  "keywords": [
+    "personal",
+    "site"
+  ],
+  "author": "Paulo Cardoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulocardoso/paulocardoso.github.io/issues"
+  },
+  "homepage": "https://github.com/paulocardoso/paulocardoso.github.io#readme"
+}
