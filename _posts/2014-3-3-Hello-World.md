@@ -3,4 +3,4 @@ layout: post
 title: Welcome!
 ---
 
-Welcome to my Software Advantures!
+Welcome to my Software Adventures!
