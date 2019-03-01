@@ -16,6 +16,24 @@
   </head>
 
   <body>
+    <div class="sidebar-wrapper">
+      <div class="about_container">
+          <img src="{{ site.avatar }}" />
+          <h1 data-ix="header-transition" class="about" >PAULO CARDOSO</h1>
+          <p data-ix="text-slide" class="about-copy" >Solution Architect at <a href="https://backbase.com/" target="_blank" class="link">@Backbase</a>. Software Craftman and Photographers Follow my work and photos.&nbsp;</p>
+          {% include svg-icons.html %}
+      </div>
+    </div>
+    <div class="content-wrapper">
+        <div id="main" role="main" class="container">
+            {{ content }}
+          </div>
+    </div>
+    
+    <!--
+
+
+    
     <div class="container-fluid">
       <div class="row flex">
         <div class="col-2">
@@ -26,6 +44,13 @@
                 </div>
               </div>
               <div class="detail-area">
+                  <div class="wrapper-footer">
+                      <div class="container">
+                        <footer class="footer">
+                          {% include svg-icons.html %}
+                        </footer>
+                      </div>
+                    </div>
               </div>
           </div>
         </div>
@@ -51,17 +76,11 @@
           <div id="main" role="main" class="container">
             {{ content }}
           </div>
-
-          <div class="wrapper-footer">
-            <div class="container">
-              <footer class="footer">
-                {% include svg-icons.html %}
-              </footer>
-            </div>
-          </div>
       </div>
       </div>
     </div>
+
+    -->
     {% include analytics.html %}
   </body>
 </html>

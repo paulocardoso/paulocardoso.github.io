@@ -82,3 +82,37 @@ code {
 .highlight .vg { color: #268BD2 } /* Name.Variable.Global */
 .highlight .vi { color: #268BD2 } /* Name.Variable.Instance */
 .highlight .il { color: #2AA198 } /* Literal.Number.Integer.Long */
+
+
+.sidebar-wrapper {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 552px;
+  bottom: 0px;
+  z-index: 0;
+  width: 30%;
+  height: 100%;
+  padding: 75px 85px 50px;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#fafafa));
+  background-image: linear-gradient(180deg, #fafafa, #fafafa);
+}
+
+.content-wrapper {
+  position: static;
+  overflow: visible;
+  width: 70%;
+  max-width: 1200px;
+  margin-left: 40%;
+  float: none;
+  clear: none;
+}
+
+.about_container {
+  position: absolute;
+  left: 85px;
+  right: 0px;
+  bottom: 25%;
+  width: 65%;
+}
