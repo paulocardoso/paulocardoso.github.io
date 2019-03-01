@@ -11,8 +11,6 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
@@ -25,62 +23,18 @@
       </div>
     </div>
     <div class="content-wrapper">
-        <div id="main" role="main" class="container">
-            {{ content }}
-          </div>
-    </div>
-    
-    <!--
-
-
-    
-    <div class="container-fluid">
-      <div class="row flex">
-        <div class="col-2">
-          <div class="profile">
-              <div class="profile-area">
-                <div class="profile-picture">
-                  <img src="{{ site.baseurl }}/images/jekyll-logo.png" class="round-pic"/>
-                </div>
-              </div>
-              <div class="detail-area">
-                  <div class="wrapper-footer">
-                      <div class="container">
-                        <footer class="footer">
-                          {% include svg-icons.html %}
-                        </footer>
-                      </div>
-                    </div>
-              </div>
-          </div>
-        </div>
-          <div class="col-10">
-          <div class="wrapper-masthead">
-            <div class="container">
-              <header class="masthead clearfix">
-                <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-                <div class="site-info">
-                  <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-                  <p class="site-description">{{ site.description }}</p>
-                </div>
-
-                <nav>
-                  <a href="{{ site.baseurl }}/blog">Blog</a>
-                  <a href="{{ site.baseurl }}/about">About</a>
-                </nav>
-              </header>
+        {% for post in site.posts %}
+          <article class="overcapture w-clearfix">
+            <h1><a class="text-white" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+            <div class="entry">
+              {{ post.excerpt }}
             </div>
-          </div>
+            <a  class="text-white"  href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+          </article>
+        {% endfor %}
 
-          <div id="main" role="main" class="container">
-            {{ content }}
-          </div>
-      </div>
-      </div>
     </div>
-
-    -->
+    
     {% include analytics.html %}
   </body>
 </html>

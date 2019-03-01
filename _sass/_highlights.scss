@@ -104,7 +104,7 @@ code {
   overflow: visible;
   width: 70%;
   max-width: 1200px;
-  margin-left: 40%;
+  margin-left: 30%;
   float: none;
   clear: none;
 }
@@ -115,4 +115,22 @@ code {
   right: 0px;
   bottom: 25%;
   width: 65%;
+}
+
+.overcapture {
+  width: 100%;
+  height: auto;
+  padding: 65px;
+  background: #222;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#005ba9), to(#005ba9));
+  background-image: linear-gradient(180deg, #005ba9, #005ba9);
+  border-bottom: solid 1px;
+  color: white;
+  font-family: 'MuseoSansW01-100', sans-serif;
+  min-height: 200px
+}
+
+.text-white {
+  color: white;
+  font-family: 'MuseoSansW01-100', sans-serif;
 }
