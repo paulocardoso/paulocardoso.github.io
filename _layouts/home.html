@@ -15,8 +15,11 @@
 
   <body>
     <div class="sidebar-wrapper">
+  
       <div class="about_container">
+        <div class="profile_pic">
           <img src="{{ site.avatar }}" />
+        </div>
           <h1 data-ix="header-transition" class="about" > <a href="{{ site.baseurl }}/">PAULO CARDOSO</a></h1>
           <p data-ix="text-slide" class="about-copy" >Solution Architect at <a href="https://backbase.com/" target="_blank" class="link">@Backbase</a>. Software Craftman and Photographers Follow my work and photos.&nbsp;</p>
           {% include svg-icons.html %}
@@ -24,12 +27,12 @@
     </div>
     <div class="content-wrapper">
         {% for post in site.posts %}
-        <article class="overcapture w-clearfix">
-          <h1><a class="text-white" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <article class="overcapture">
+          <h1><a  href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
           <div class="entry">
             {{ post.excerpt }}
           </div>
-          <a  class="text-white"  href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+          <a  href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
         </article>
       {% endfor %}
     </div>

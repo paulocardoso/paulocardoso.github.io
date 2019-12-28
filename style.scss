@@ -18,8 +18,8 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
+  background: $lightGray;
+  font: 18px/1.4 $roboto;
   color: $darkGray;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $roboto;
   color: $darkerGray;
   font-weight: bold;
 
@@ -283,7 +283,84 @@ footer {
   text-align: center;
 }
 
+.sidebar-wrapper {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 552px;
+  bottom: 0px;
+  z-index: 0;
+  width: 30%;
+  height: 100%;
+  padding: 75px 85px 20px;
+  background-color: $base-color;
+  color: #fff;
+  border-radius: 15% / 45%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  a {
+    color: white;
+  }
+  .profile_pic {
+    background-color: #fff;
+    width: 200px;
+    padding: 6px 6px 3px 6px;
+    border-radius: 500%;
+     img {
+      border-radius: 50%;
+      }
+  }
+}
+
+
+
+.content-wrapper {
+  position: static;
+  overflow: visible;
+  width: 68%;
+  max-width: 1200px;
+  margin-left: 30%;
+  float: none;
+  clear: none;
+}
+
+.about_container {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0%;
+  width: 65%;
+}
+
+.overcapture {
+  width: 100%;
+  height: auto;
+  padding: 65px;
+  background: #fff;
+  color: #222;
+  font-family: 'Roboto';
+  min-height: 200px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.overcap::after {
+  content: '';
+  position: absolute;
+  z-index: -1; /* hide shadow behind image */
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);        
+  width: 70%; 
+  left: 15%; /* one half of the remaining 30% */
+  height: 100px;
+  bottom: 0;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+

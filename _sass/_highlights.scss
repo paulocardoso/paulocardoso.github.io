@@ -1,4 +1,5 @@
 
+
 .highlight {
   background-color: #efefef;
   padding: 7px 7px 7px 10px;
@@ -83,54 +84,3 @@ code {
 .highlight .vi { color: #268BD2 } /* Name.Variable.Instance */
 .highlight .il { color: #2AA198 } /* Literal.Number.Integer.Long */
 
-
-.sidebar-wrapper {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  right: 552px;
-  bottom: 0px;
-  z-index: 0;
-  width: 30%;
-  height: 100%;
-  padding: 75px 85px 50px;
-  background-color: #fafafa;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#fafafa));
-  background-image: linear-gradient(180deg, #fafafa, #fafafa);
-}
-
-.content-wrapper {
-  position: static;
-  overflow: visible;
-  width: 70%;
-  max-width: 1200px;
-  margin-left: 30%;
-  float: none;
-  clear: none;
-}
-
-.about_container {
-  position: absolute;
-  left: 85px;
-  right: 0px;
-  bottom: 25%;
-  width: 65%;
-}
-
-.overcapture {
-  width: 100%;
-  height: auto;
-  padding: 65px;
-  background: #222;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#005ba9), to(#005ba9));
-  background-image: linear-gradient(180deg, #005ba9, #005ba9);
-  border-bottom: solid 1px;
-  color: white;
-  font-family: 'MuseoSansW01-100', sans-serif;
-  min-height: 200px
-}
-
-.text-white {
-  color: white;
-  font-family: 'MuseoSansW01-100', sans-serif;
-}
