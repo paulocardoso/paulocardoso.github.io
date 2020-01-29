@@ -9,7 +9,7 @@ language: en-US
 
 <br>
  
- Recently i had a change of trying Atlas, it's the new fully-managed cloud database solution. Mongodb is already a very known noSql document based database in the Market, now Mongo provides a new completely solution based on public clouds such as AWS and Azure.
+ Recently i had a change of trying MongoDB Atlas, it's the new fully-managed cloud database solution. Mongodb is already a very known noSql document based database in the Market, now Mongo provides a new completely solution based on public clouds such as AWS and Azure.
   
 
 Getting Started
@@ -47,7 +47,7 @@ Atlas Provides all the features that a normal Mongo DB licence, without all the 
 
 
 
-Consirations
+Considerations
 ---------------
 
 If you already uses MongoDB as your database, and have plans to move to cloud or already mantains a instance, give a try yourself on Atlas.
