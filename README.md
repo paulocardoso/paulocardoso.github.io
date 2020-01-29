@@ -61,7 +61,6 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 I've created a more detailed walkthrough, [**Build A Blog With Jekyll And GitHub Pages**](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/) over at the Smashing Magazine website. Check it out if you'd like a more detailed walkthrough and some background on Jekyll. :metal:
 
 It covers:
-
 - A more detailed walkthrough of setting up your Jekyll blog
 - Common issues that you might encounter while using Jekyll
 - Importing from Wordpress, using your own domain name, and blogging in your favorite editor
