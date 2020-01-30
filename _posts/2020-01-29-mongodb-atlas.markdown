@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why you think Atlas as you next database in cloud solution."
+title:  "Why you should think Atlas as your next database in cloud solution."
 date:   2020-01-29 10:28:43 +0100
 categories: database architecture
 language: en-US
