@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
     <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css>"/>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-  </head>
-
-  <body>
-    <div class="site-container">
-      <div class="row">
-      <div class="col-item sidebar-wrapper">
-        <div class="about_container">
-          <div class="profile_pic">
-            <img src="{{ site.avatar }}" />
-          </div>
-            <h1 data-ix="header-transition" class="about" > <a href="{{ site.baseurl }}/">PAULO CARDOSO</a></h1>
-            <p data-ix="text-slide" class="about-copy" >Solution Architect at <a href="https://backbase.com/" target="_blank" class="link">@Backbase</a>. Software Craftman and Photographers Follow my work and photos.&nbsp;</p>
-            {% include svg-icons.html %}
-        </div>
-      </div>
-      <div class="col-item content-wrapper">
-          {% for post in site.posts %}
-          <article class="overcapture">
-            <h1><a  href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-            <div class="entry">
-              {{ post.excerpt }}
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4">
+                <div class="block-side d-none d-lg-block"></div>
+                <div class="sidebar-wrapper">
+                    <div class="center">
+                        <div class="profile-pic">
+                            <img src="https://avatars2.githubusercontent.com/u/56151773?s=460&amp;v=4" />
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a  href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-          </article>
-        {% endfor %}
-      </div>
+            <div class="col-sm-12 col-lg-6 ">
+                <div class="center">
+                    <div>
+                        <h6 class="mb-0 d-block d-sm-none d-lg-block">HI THERE !</h6>
+                        <h1 class="profile-title"><span>I'M</span> PAULO CARDOSO</h1>
+                        <p class="open-sans-font">I'm a Brazilian based in Netherlands working as Solution Architect and
+                            currently working @ Leaseplan Digital. I consider myself a Software Craftman and an Amateur
+                            Photographer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-      
+    <div class="menu p-2">
+        <div class="">
+            <div class="d-flex flex-column bd-highlight mb-3">
+                <div class="p-3 bd-highlight">
+                    <a type="button" href="/" class="btn btn-warning btn-circle btn-xl "><i class="fa fa-home"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    {% include analytics.html %}
-  </body>
+<script src="https://kit.fontawesome.com/ced83e808b.js" crossorigin="anonymous"></script>
+{% include analytics.html %}
+</body>
 </html>

@@ -1,0 +1,134 @@
+@import url("//db.onlinewebfonts.com/c/272715a0670500b7e64828c113fb6dbc?family=MuseoSansW01-100");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+html {
+    font-size: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: #111;
+    font: 18px/1.4 "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+    margin: 0px;
+    color: #fff;
+}
+
+.site-container {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.sidebar-wrapper {
+    height: 100vh;
+    padding-left: 20px;
+}
+
+.profile-pic {
+    background-color: #fff;
+    width: 400px;
+    padding: 6px 6px 3px 6px;
+    border-radius: 10%;
+    margin: auto;
+    box-shadow: 0 0 7px rgb(0 0 0 / 90%);
+}
+
+.profile-pic img {
+    border-radius: 10%;
+    max-width: 100%;
+}
+
+.about_container {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    bottom: 0%;
+}
+.center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-title {
+    color: #ffc107;
+}
+
+.profile-title > spam {
+    color: #fff;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+.btn-circle.btn-xl {
+    width: 55px;
+    height: 55px;
+    padding: 12px 13px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.menu {
+    visibility: hidden;
+}
+
+.block-side {
+    background-color: #ffc107;
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -83%;
+    top: -50%;
+    z-index: -1;
+    box-shadow: 0 0 7px rgb(0 0 0 / 90%);
+}
+
+@media (min-width: 992px) {
+    .menu {
+        visibility: visible;
+        position: fixed;
+        right: 0;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        height: calc(100vh - 200px);
+        top: 100px;
+        opacity: 1;
+        transition: opacity 0.3s;
+        -webkit-transition: opacity 0.3s;
+    }
+}
+
+.bg-dark {
+    background-color: #111!important;
+}
+
+.bg-secondary {
+    background-color: #252525!important;
+}
+
+.blog-title {
+    font-size: 5vh;
+    font-weight: 999;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+}
+
+.subtitle{
+    font-size: 3vh;
+    font-weight: 999;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    color:#ffc107
+}
+
